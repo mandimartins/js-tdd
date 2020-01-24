@@ -4,7 +4,8 @@
   "description": "Biblioteca do curso de JS com TDD na prática.",
   "main": "index.js",
   "scripts": {
-    "lint":"npx eslint src/main.js",
+    "test":"npx mocha tests/**/*.spec.js",
+    "lint": "npx eslint src/main.js",
     "prepush": "npm run lint"
   },
   "repository": {
@@ -16,16 +17,18 @@
     "tdd",
     "library"
   ],
-  "author": "Amandad Martins <mandi.martins00@gmail.com> (https://github.com/mandimartins/)",
+  "author": "Amanda Martins <mandi.martins00@gmail.com> (https://github.com/mandimartins/)",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/mandimartins/js-tdd/issues"
   },
   "homepage": "https://github.com/mandimartins/js-tdd#readme",
   "devDependencies": {
+    "chai": "^4.2.0",
     "eslint": "^6.8.0",
     "eslint-config-airbnb-base": "^14.0.0",
     "eslint-plugin-import": "^2.20.0",
-    "husky": "^4.0.10"
+    "husky": "^4.0.10",
+    "mocha": "^7.0.0"
   }
 }
